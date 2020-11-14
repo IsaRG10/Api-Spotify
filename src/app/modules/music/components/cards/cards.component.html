@@ -1,0 +1,26 @@
+<div class="album py-5 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4" *ngFor="let item of items">
+            <div class="card mb-4 box-shadow" style="border:solid; box-shadow: 7px 12px grey;">
+              <img class="card-img-top" [src]="item.images | noimage">
+              <div class="card-body" >
+                <h2>{{item.name}}</h2>
+                <p class="card-text">
+                    <span *ngFor="let genero of item.genres" class="badge badge-success">
+                        {{genero}}
+                    </span>
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" [routerLink]="['../album', item.id]">Ver álbum</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary" [routerLink]="['../canciones', item.id]">Ver canciones</button>
+                  </div>
+                  <small class="text-muted">Followers: {{item.followers.total}}</small>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+</div>

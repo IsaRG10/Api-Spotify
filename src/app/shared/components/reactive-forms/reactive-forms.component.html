@@ -1,0 +1,48 @@
+<form [formGroup]="reactiveForm" *ngIf="reactiveForm">
+    <div style="margin-top: 15px" class="container">
+        <div class="row">
+            <div class="col">
+                <h5>Nombre</h5>
+                <input type="text" id="nombre" formControlName="nombre">
+            </div>
+            <div class="col">
+                <h5>Mail</h5>
+                <input type="text" id="nombre" formControlName="mail">
+            </div>
+            <div class="col">
+                <h5>Username</h5>
+                <input type="text" id="nombre" formControlName="username">
+            </div>
+            <div class="col">
+                <h5>Centro</h5>
+                <input type="text" id="nombre" formControlName="centro">
+            </div>
+            <div class="col">
+                <h5>Edad</h5>
+                <input type="number" id="nombre" formControlName="edad">
+            </div>
+            <div class="col">
+                <h5>Telefono</h5>
+                <input type="text" id="nombre" formControlName="telefono">
+            </div>
+            <div class="col">
+                <h5>Calle</h5>
+                <input type="text" id="nombre" formControlName="calle">
+            </div>
+            <div class="col">
+                <h5>Codigo postal</h5>
+                <input type="text" id="nombre" formControlName="cp">
+            </div>
+            <div class="col">
+                <h5>Ciudad</h5>
+                <input type="text" id="nombre" formControlName="ciudad">
+            </div>
+            <div class="col">
+                <h5>Provincia</h5>
+                <input type="text" id="nombre" formControlName="provincia">
+            </div>
+        </div>
+    </div><br><br>
+    <button (click)="emitEditForm()" class="btn btn-success">Confirmar</button>
+    <button (click)="cancelar()" class="btn btn-danger" style="margin-left: 10px;;">Cancelar</button>
+</form>

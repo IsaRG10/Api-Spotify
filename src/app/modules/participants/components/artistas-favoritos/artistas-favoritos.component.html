@@ -1,0 +1,51 @@
+<div class="jumbotron bg-success encabezado" >
+    <h1 class="display-4">{{participante.nombre}}</h1>
+    <p class="lead">Favoritos de {{participante.nombre}}</p>
+    <img src="../../../../../assets/img/usuario.png" class="usuario">
+</div>
+<h2 class="artista navbar-dark bg-dark">Artistas</h2>
+<div class="album py-5 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4" *ngFor="let item of artistasFavoritos; let indice = index">
+            <div class="card mb-4 box-shadow tarjetas">
+              <img class="card-img-top" [src]="item.images.length > 0 ? item.images[0].url : '' ">
+              <div class="card-body" >
+                <h2>{{item.name}}</h2>
+                <p class="card-text">
+                  <span *ngFor="let genero of item.genres" class="badge badge-success">
+                      {{genero}}
+                  </span>
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted">Followers: {{item.followers.total}}</small>
+                  <button class="btn btn-danger" style="border-color: black;">
+                    <span (click)="eliminarArtistaFavorito(indice)" class="material-icons" style="cursor: pointer;">delete</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+</div>
+
+<h2 class="canciones navbar-dark bg-dark">Canciones</h2>
+
+<div class="album py-5 bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4" *ngFor="let item of cancionesFavoritas; let indice=index" >
+          <div class="card mb-4 box-shadow tarjetas" >
+            <img class="card-img-top" [src]="item.album.images[0].url" [alt]="item.album.name">
+            <div class="card-body">
+              <h2>{{item.name}}</h2>
+              <button class="btn btn-danger" style="border-color: black;">
+                <span (click)="eliminarCancionFavorita(indice)" class="material-icons" style="cursor: pointer;">delete</span>
+              </button>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>

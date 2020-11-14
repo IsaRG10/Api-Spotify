@@ -1,0 +1,33 @@
+<button (click)="setShowReactiveForm()" class="btn btn-success boton">Crear nuevo participante
+    <span class="material-icons">
+        create
+        </span>
+</button>
+
+<table class="table">
+    <thead>
+        <tr class="texto">
+            <th scope="col">Nombre</th>
+            <th scope="col">Mail</th>
+            <th scope="col">Centro</th>
+            <th scope="col">Edad</th>
+            <th scope="col">Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of participantes" class="texto">
+            <td>{{user.nombre}}</td>
+            <td>{{user.mail}}</td>
+            <td>{{user.centro}}</td>
+            <td>{{user.edad}}</td>
+            <td class="btn btn-success" style="margin:3px; border-color:black; box-shadow: 3px 5px green;">
+                <span (click)="eliminar(user.id)" class="material-icons" style="cursor: pointer;">delete</span>
+            </td>
+            <td class="btn btn-info" style="margin:3px; border-color:black;box-shadow: 3px 5px blue;">
+                <span [routerLink]="['detalle-participante', user.id]" class="material-icons" style="cursor: pointer;">visibility</span>
+            </td>
+            <td class="btn btn-success" style="margin:3px; border-color:black;box-shadow: 3px 5px green;">
+                <span [routerLink]="['artistas-favoritos', user.id]" class="material-icons" style="cursor: pointer;">favorite</span>
+            </td>
+    </tbody>
+</table>

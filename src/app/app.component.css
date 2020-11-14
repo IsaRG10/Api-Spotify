@@ -1,0 +1,12 @@
+.imagen{
+    width: 30px; 
+    height: 30px;
+    border-radius: 510px;
+    position: absolute;
+     
+}
+
+.texto{
+    font-size: 25px;
+    margin-left: 40px;
+}

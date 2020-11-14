@@ -1,0 +1,51 @@
+<div class="jumbotron bg-success encabezado" >
+    <h1 class="display-4">{{participante.nombre}}</h1>
+    <p class="lead">Informacion sobre {{participante.nombre}}</p> 
+    <img src="../../../../../assets/img/usuario.png" class="usuario">
+</div>
+<div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <h2 class="color navbar-dark bg-dark">Nombre</h2>
+        <h2 class="texto">{{participante.nombre}}</h2>
+        <h2 class="color navbar-dark bg-dark">Centro</h2>
+        <h2 class="texto">{{participante.centro}}</h2>
+        <h2 class="color navbar-dark bg-dark">Calle</h2>
+        <h2 class="texto">{{participante.calle}}</h2>
+        <h2 class="color navbar-dark bg-dark">Provincia</h2>
+        <h2 class="texto">{{participante.provincia}}</h2>
+      </div>
+      <div class="col-sm">
+        <h2 class="color navbar-dark bg-dark">Mail</h2>
+        <h2 class="texto">{{participante.mail}}</h2>
+        <h2 class="color navbar-dark bg-dark">Edad</h2>
+        <h2 class="texto">{{participante.edad}}</h2>
+        <h2 class="color navbar-dark bg-dark">Codigo postal</h2>
+        <h2 class="texto">{{participante.cp}}</h2>
+      </div>
+      <div class="col-sm">
+        <h2 class="color navbar-dark bg-dark">Username</h2>
+        <h2 class="texto">{{participante.username}}</h2>
+        <h2 class="color navbar-dark bg-dark">Telefono</h2>
+        <h2 class="texto">{{participante.telefono}}</h2>
+        <h2 class="color navbar-dark bg-dark">Ciudad</h2>
+        <h2 class="texto">{{participante.ciudad}}</h2>
+      </div>
+    </div>
+  </div>
+
+  <button (click)="setShowReactiveForm()" class="btn btn-success botones" style="margin-left: 45%;">
+    Editar
+    <span class="material-icons">edit</span>
+  </button><br>
+<br><br>
+  <h1 class="navbar-dark bg-dark artista">Artistas favoritos</h1>
+  <button class="btn btn-success botones" (click)="mostrarBuscador()">Añadir artistas</button>
+  <div *ngIf="mostrar">
+    <app-buscador-artistas [idParticipante]="requestedParticipanteId"></app-buscador-artistas>
+  </div>
+<h1 class="navbar-dark bg-dark canciones" style="margin-top: 10px;">Canciones favoritas</h1>
+<button class="btn btn-success botones" (click)="mostrarBuscadorCanciones()">Añadir Cancion</button>
+<div *ngIf="mostrarCanciones">
+  <app-buscador-canciones [idParticipante]="requestedParticipanteId"></app-buscador-canciones>
+</div>

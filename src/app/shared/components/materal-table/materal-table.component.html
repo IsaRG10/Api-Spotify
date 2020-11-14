@@ -1,0 +1,12 @@
+<mat-form-field style="margin-top: 15px; width: 50%;">
+    <mat-label>Filter</mat-label>
+    <input matInput (keyup)="applyFilter($event)" placeholder="Buscador" #input>
+</mat-form-field>
+<table mat-table [dataSource]="tableData" matSort class="mat-elevation-28">
+    <ng-container matColumnDef="{{column}}" *ngFor="let column of columns">
+        <th mat-headler-cell *matHeaderCellDef mat-sort-header style="background-color: black; color:white;">{{column}}</th>
+        <td mat-cell *matCellDef="let element">{{element[column]}}</td>
+</ng-container>
+<tr mat-header-row *matHeaderRowDef="columns"></tr>
+<tr mat-row *matRowDef="let row; columns: columns;"></tr>
+</table>

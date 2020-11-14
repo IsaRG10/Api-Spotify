@@ -1,0 +1,18 @@
+<div class="album py-5 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4" *ngFor="let item of items">
+            <div class="card mb-4 box-shadow" style="border:solid; box-shadow: 7px 12px grey;">
+              <img class="card-img-top" [src]="item.album.images[0].url" [alt]="item.album.name">
+              <div class="card-body">
+                <h2  style="cursor: pointer;">{{item.name}}</h2>
+              </div>
+              <div class="card-body">
+                <button class="btn btn-danger"><span (click)="anadirFavorito(item.id)" class="material-icons" style="cursor: pointer;">favorite</span></button>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+</div>
+

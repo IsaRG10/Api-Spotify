@@ -1,0 +1,19 @@
+.tarjetas{
+    border-color: black; 
+    border:solid; 
+    border-color:black; 
+    box-shadow: 7px 12px grey;
+}
+
+.botonesVerdes{
+    border-color:black; 
+    box-shadow: 3px 5px green;
+}
+
+.botonRojo{
+    position: absolute; 
+    margin-left: 90%; 
+    margin-top: -50px; 
+    border-color:black; 
+    box-shadow: 3px 5px red;
+}

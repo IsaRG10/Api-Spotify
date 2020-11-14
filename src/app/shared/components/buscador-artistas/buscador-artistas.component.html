@@ -1,0 +1,7 @@
+<div>
+    <br><br>
+    <h1>Buscador Artistas</h1>
+    <input #artista type="text" class="form-control" style="width: 40%;" (keyup)=buscador(artista.value) placeholder="Buscar artista...">
+</div>
+
+<app-tarjetas [items]="arrayArtistas" [idParticipante]="idParticipante"></app-tarjetas>

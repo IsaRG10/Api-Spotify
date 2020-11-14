@@ -1,0 +1,251 @@
+{
+  "userauth": [
+    {
+      "username": "admin",
+      "password": "1234"
+    }
+  ],
+  "participantes": [
+    {
+      "id": 1,
+      "nombre": "Francisco ",
+      "mail": "FranG@gmail.com",
+      "username": "FranG",
+      "centro": "IES Arroyo Harnina",
+      "edad": 23,
+      "telefono": "849300573",
+      "calle": "calle prueba",
+      "cp": "06200",
+      "ciudad": "Almendralejo",
+      "provincia": "Badajoz",
+      "artistaFavoritos": [
+        "2R21vXR83lH98kGeO99Y66",
+        "4Nrd0CtP8txoQhnnlRA6V6"
+      ],
+      "cancionesFavoritas": [
+        "6cx06DFPPHchuUAcTxznu9",
+        "5EId1m4DNwTf3at31w8bPJ",
+        "4y3BUo2hp0MxylfbUaqRyJ"
+      ]
+    },
+    {
+      "id": 2,
+      "nombre": "Marcos",
+      "mail": "marcosA@gmail.com",
+      "username": "MarcosA",
+      "centro": "IES Arroyo Harnina",
+      "edad": 38,
+      "telefono": "666646644",
+      "calle": "calle falsa",
+      "cp": "06200",
+      "ciudad": "Almendralejo",
+      "provincia": "Badajoz",
+      "artistaFavoritos": [
+        "28gNT5KBp7IjEOQoevXf9N",
+        "790FomKkXshlbRYZFtlgla",
+        "0VZrPa7mWAYXH4CwmYk8Km"
+      ],
+      "cancionesFavoritas": [
+        "4y3BUo2hp0MxylfbUaqRyJ",
+        "4ZRrLHqzhGRXYj2qcB4s5S"
+      ]
+    },
+    {
+      "id": 3,
+      "nombre": "Sergio",
+      "mail": "sergioG@gmail.com",
+      "username": "SergioG",
+      "centro": "IES Arroyo Harnina",
+      "edad": 21,
+      "telefono": "614673334",
+      "calle": "Libertad",
+      "cp": "06810",
+      "ciudad": "Calamonte",
+      "provincia": "Badajoz",
+      "artistaFavoritos": [],
+      "cancionesFavoritas": []
+    },
+    {
+      "id": 4,
+      "nombre": "Issam",
+      "mail": "hamzal@gmail.com",
+      "username": "IssamR",
+      "centro": "IES Arroyo Harnina",
+      "edad": 22,
+      "telefono": "6427777784",
+      "calle": "Teresa Gómez",
+      "cp": "06200",
+      "ciudad": "Almendralejo",
+      "provincia": "Badajoz",
+      "artistaFavoritos": [
+        "4Nrd0CtP8txoQhnnlRA6V6"
+      ],
+      "cancionesFavoritas": []
+    },
+    {
+      "id": 5,
+      "nombre": "Francisco Javier ",
+      "mail": "fj@gmail.com",
+      "username": "FranciscoD",
+      "centro": "IES Arroyo Harnina",
+      "edad": 24,
+      "telefono": "6288881323",
+      "calle": " Medina",
+      "cp": "6310",
+      "ciudad": "Puebla de Sancho Pérez",
+      "provincia": "Badajoz",
+      "artistaFavoritos": [],
+      "cancionesFavoritas": []
+    },
+    {
+      "id": 6,
+      "nombre": "Brighite",
+      "mail": "bn@gmail.com",
+      "username": "BrighiteN",
+      "centro": "IES Arroyo Harnina",
+      "edad": 23,
+      "telefono": "688888801",
+      "calle": "calle falsa",
+      "cp": "6200",
+      "ciudad": "Almendralejo",
+      "provincia": "Badajoz",
+      "artistaFavoritos": [],
+      "cancionesFavoritas": []
+    },
+    {
+      "id": 7,
+      "nombre": "Marcos",
+      "mail": "marcosx@gmail.com",
+      "username": "MarcosA",
+      "centro": "IES Albarregas",
+      "edad": 20,
+      "telefono": "699999655",
+      "calle": "peral",
+      "cp": "6800",
+      "ciudad": "Merida",
+      "provincia": "Badajoz",
+      "artistaFavoritos": [],
+      "cancionesFavoritas": []
+    },
+    {
+      "id": 8,
+      "nombre": "Gonzalo",
+      "mail": "g@gmail.com",
+      "username": "GonzaloT",
+      "centro": "IES Albarregas",
+      "edad": 23,
+      "telefono": "639999990",
+      "calle": "Calle falsa 123",
+      "cp": "6800",
+      "ciudad": "Merida",
+      "provincia": "Badajoz",
+      "artistaFavoritos": [],
+      "cancionesFavoritas": []
+    },
+    {
+      "id": 9,
+      "nombre": "Carlos",
+      "mail": "c@gmail.com",
+      "username": "CarlosR",
+      "centro": "IES Albarregas",
+      "edad": 27,
+      "telefono": "679999969",
+      "calle": "Blanquea",
+      "cp": "6800",
+      "ciudad": "Merida",
+      "provincia": "Badajoz",
+      "artistaFavoritos": [],
+      "cancionesFavoritas": []
+    },
+    {
+      "id": 10,
+      "nombre": "Antonio",
+      "mail": "a@gmail.com",
+      "username": "AntonioSr",
+      "centro": "Cesur Malaga",
+      "edad": 25,
+      "telefono": "600000007",
+      "calle": "Miguel",
+      "cp": "6700",
+      "ciudad": "Villanueva de la Serena",
+      "provincia": "Badajoz",
+      "artistaFavoritos": [],
+      "cancionesFavoritas": []
+    },
+    {
+      "id": 11,
+      "nombre": "Isabel",
+      "mail": "im@gmail.com",
+      "username": "IsaR",
+      "centro": "IES Arroyo Harnina",
+      "edad": 23,
+      "telefono": "600000071",
+      "calle": "calle falsa",
+      "cp": "06199",
+      "ciudad": "Badajoz",
+      "provincia": "Badajoz",
+      "artistaFavoritos": [],
+      "cancionesFavoritas": []
+    },
+    {
+      "id": 12,
+      "nombre": "Pedro",
+      "mail": "valades@gmail.com",
+      "username": "PedroValades",
+      "centro": "IES Donoso Cortes",
+      "edad": 22,
+      "telefono": "633377665",
+      "calle": "Castaño",
+      "cp": "06400",
+      "ciudad": "Don Benito",
+      "provincia": "Badajoz",
+      "artistaFavoritos": [],
+      "cancionesFavoritas": []
+    },
+    {
+      "id": 13,
+      "nombre": "Ángela",
+      "mail": "a@gmail.com",
+      "username": "AngelaS",
+      "centro": "IES Donoso Cortes",
+      "edad": 21,
+      "telefono": "600000001",
+      "calle": "Ángel ",
+      "cp": "06131",
+      "ciudad": "Alconchel",
+      "provincia": "Badajoz",
+      "artistaFavoritos": [],
+      "cancionesFavoritas": []
+    },
+    {
+      "id": 14,
+      "nombre": "Alvaro",
+      "mail": "a.sanchez@gmail.com",
+      "username": "AlvaroS",
+      "centro": "IES Donoso Cortes",
+      "edad": 20,
+      "telefono": "666333224",
+      "calle": "Jerte",
+      "cp": "06400",
+      "ciudad": "Don Benito",
+      "provincia": "Badajoz",
+      "artistaFavoritos": [],
+      "cancionesFavoritas": []
+    },
+    {
+      "id": 15,
+      "nombre": "q",
+      "mail": "q",
+      "username": "q",
+      "centro": "q",
+      "edad": 1,
+      "telefono": "q",
+      "calle": "q",
+      "cp": "q",
+      "ciudad": "q",
+      "provincia": "q",
+      "artistaFavoritos": [],
+      "cancionesFavoritas": []
+    }
+  ]
+}

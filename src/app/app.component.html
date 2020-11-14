@@ -1,0 +1,5 @@
+<nav class="navbar navbar-dark bg-dark" style="color:white"> 
+     <img src="../assets/img/logo.png" class="imagen"><b class="texto">Spotify</b>
+     <button *ngIf="isAuthenticated" (click)="logout()" [routerLink]="['../login']" class="btn btn-danger" style="margin-left: 5px;">Crerrar Sesion</button>
+</nav>
+<router-outlet></router-outlet>
